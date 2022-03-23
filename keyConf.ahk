@@ -44,7 +44,8 @@ $^`;::Send, {^-}
 
 ; Edit script
 #z::
-    Run, C:\Users\tie306883\app_data\autoHotKey\editFile.exe C:\Users\tie306883\app_data\autoHotKey\keyConf.ahk
+    EnvGet, ahkPath, AhkPath
+    Run, %ahkPath%\editTxt.exe %ahkPath%\keyConf.ahk
     Sleep, 30
     Reload
     Return
